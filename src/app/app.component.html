@@ -13,8 +13,9 @@
                     <as-split-area size="60">
                         <as-split direction="vertical">
                             <as-split-area size="80">
-                                <iframe [class.thumbnail]="thumbnail" [src]="tv" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen
-      allowfullscreen></iframe>
+                            
+                            <iframe [src]="tvs" 
+      sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                             </as-split-area>
                             <as-split-area size="20">
                                 <iframe [class.thumbnail]="thumbnail" [src]="safeSrc" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen

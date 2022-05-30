@@ -9,10 +9,10 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 export class AppComponent {
 
   safeSrc: SafeResourceUrl;
-  tv: SafeResourceUrl;
+  tvs: SafeResourceUrl;
   constructor(private sanitizer: DomSanitizer) { 
     this.safeSrc =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.cryptometer.io/volume-flow");
-    this.tv =  this.sanitizer.bypassSecurityTrustResourceUrl("https://ru.tradingview.com/chart/rhp4KhhD/?symbol=BYBIT%3ABTCUSDT");
+    this.tvs =  this.sanitizer.bypassSecurityTrustResourceUrl("https://ru.tradingview.com/chart/rhp4KhhD/?symbol=BYBIT%3ABTCUSDT");
 
   }
 
